@@ -1,0 +1,25 @@
+{
+  "name": "promise-queue-plus",
+  "description": "Promise-based queue. Support timeout, retry and so on.",
+  "main": "dist/promise-queue-plus.js",
+  "authors": [
+    "boybian <coldboardcoldtree@126.com>"
+  ],
+  "license": "MPL(Mozilla Public License1.1)",
+  "keywords": [
+    "Promise",
+    "queue",
+    "pool",
+    "Async",
+    "Q",
+    "队列"
+  ],
+  "homepage": "https://github.com/boyplatform/messageQueue",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

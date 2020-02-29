@@ -1,0 +1,77 @@
+{
+  "name": "messageQueue",
+  "version": "1.0.0",
+  "description": "messageQueue,One repo of boy modality platform. Support timeout, retry,queue index,trafficshaping,queue index persist,trafficshaping persist,message persist and so on.",
+  "homepage": "https://github.com/boyplatform/messageQueue",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "src/*",
+    "dist/*",
+    "demo/*"
+  ],
+  "scripts": {
+    "test": "mocha --bail --reporter spec test/mocha_*.js",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/mocha_*.js",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec test/mocha_*.js",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boyplatform/messageQueue.git"
+  },
+  "keywords": [
+    "Promise",
+    "queue",
+    "pool",
+    "Async",
+    "Q",
+    "队列",
+    "队列索引",
+    "流量整形"
+  ],
+  "dependencies": {
+    "async-lock": "^1.1.4",
+    "bluebird": "^3",
+    "co": "^4.6.0",
+    "date-utils": "^1.2.21",
+    "deasync": "^0.1.15",
+    "debug": "^4.1.0",
+    "easy-promise": "^0.0.4",
+    "express": "^4.15.3",
+    "express-generator": "^4.15.0",
+    "extend-promise": "^0.0.6",
+    "formidable": "^1.1.1",
+    "lodash": "^4.17.11",
+    "mssql": "^4.0.4",
+    "mysql": "^2.11.1",
+    "mysql-dbhelper": "^0.3.2",
+    "node-uuid": "^1.0.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "thunkify": "^2.1.2",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.8.6",
+    "express": "^4.12.3",
+    "ffi": "^2.3.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-header": "^1.8.8",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0",
+    "istanbul": "0.3.15",
+    "mocha": "^2.5.3",
+    "node-gyp": "^6.0.0",
+    "q": "*",
+    "request": "*"
+  },
+  "author": {
+    "name": "boybian",
+    "email": "coldboardcoldtree@126.com"
+  },
+  "license": "MPL(Mozilla Public License1.1)"
+}

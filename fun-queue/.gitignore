@@ -1,0 +1,21 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.out
+*.pid
+*.gz
+
+# *.min.js
+npm-debug.log
+
+/.idea/
+/.vscode/
+/typings/
+/node_modules/
+/_temp/
+/coverage/
+
+pids
+logs
+results
