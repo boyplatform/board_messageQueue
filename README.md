@@ -12,3 +12,6 @@ messageQueue,One repo of boy distribute modality platform. Support timeout, retr
 3.If you want to anti request concurrency for your IOT device sensor's DLL API(or any third party DLL API), you can use this micro-service role and deploy it with your IOT lower computer.
 4.If you want to anti request concurrency for memory of boyplatform, you can use this micro-service role.
 5.If you want to anti request concurrency for diskFile of boyplatform, you can use this micro-service role.
+
+#Current bussiness DB type supported by this micro-service role
+MySql,MSSQL
