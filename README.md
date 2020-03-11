@@ -38,12 +38,16 @@ MySql,MSSQL
   
   (1)通过该队列调用第三方数据库服务器并进行操作：
   (1)operation third party database via this messageQueue:
+  
   ---- 用于调用MSSQL(For MSSQL) ----
+  
     POST http://127.0.0.1:8080/ HTTP/1.1
 	User-Agent: Fiddler
 	Host: 127.0.0.1:8080
 	Content-Length: 476
 	content-type: application/json
+	
+	
   --增(Add)
     body message:
 	{
