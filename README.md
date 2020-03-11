@@ -503,7 +503,8 @@ MySql,MSSQL
 			  "targetDbName":"test",
 			  "writeSql":"insert into student(stuName) values (#stuName)",
 			  "writeSqlParameter":{"#stuName":"'test057'"},
-			  "blockVerifyOrNot":true
+			  "blockVerifyOrNot":true,
+			  "reqStorageClusterDbType":0  // 0=For mysql diskData cluster; 1=For mssql diskData cluster
 
 		  },
 		  "timeout":"3000",
@@ -527,7 +528,8 @@ MySql,MSSQL
 			  "targetDbName":"test",
 			  "writeSql":"insert into student(stuName) values (#stuName)",
 			  "writeSqlParameter":{"#stuName":"'test057'"},
-			  "blockVerifyOrNot":false
+			  "blockVerifyOrNot":false,
+			  "reqStorageClusterDbType":0  // 0=For mysql diskData cluster; 1=For mssql diskData cluster
 
 		  },
 		  "timeout":"3000",
@@ -558,7 +560,8 @@ MySql,MSSQL
 				 "cacheGenMethod":"3",
 				 "ttl":"100",
 				 "querySql":"select stuName from student where stuName='#stuName'",
-				 "querySqlParameter":{"#stuName":"test057"} 
+				 "querySqlParameter":{"#stuName":"test057"},
+			     "reqStorageClusterDbType":0  // 0=For mysql diskData cluster; 1=For mssql diskData cluster 
 
 			  },
 			  "timeout":"3000",
