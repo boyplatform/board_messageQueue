@@ -779,7 +779,7 @@ var toDoThirdPartyApiActionAsOp={
 
 		var dllName=messageActionStatement.dllName;
 		var methodName=messageActionStatement.methodName;
-		var methodIOParameterFormat=messageActionStatement.methodIOParameterFormat;
+		var methodIOParameterFormat=eval(messageActionStatement.methodIOParameterFormat);
 		var methodIOParameterStr=messageActionStatement.methodIOParameterStr;
 		QueueDll.dllInvoker(conf.platformArch.thirdPartyDllPath,dllName,methodName,methodIOParameterFormat,methodIOParameterStr,function(result){
 			funCallback(result);
