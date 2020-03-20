@@ -14,7 +14,7 @@
     "Q",
     "队列"
   ],
-  "homepage": "https://github.com/boyplatform/messageQueue",
+  "homepage": "https://github.com/boyplatform/board_messageQueue",
   "ignore": [
     "**/.*",
     "node_modules",

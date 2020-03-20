@@ -2,7 +2,7 @@
   "name": "messageQueue",
   "version": "1.0.0",
   "description": "messageQueue,One repo of boy modality platform. Support timeout, retry,queue index,trafficshaping,queue index persist,trafficshaping persist,message persist and so on.",
-  "homepage": "https://github.com/boyplatform/messageQueue",
+  "homepage": "https://github.com/boyplatform/board_messageQueue",
   "main": "index.js",
   "files": [
     "index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/boyplatform/messageQueue.git"
+    "url": "https://github.com/boyplatform/board_messageQueue.git"
   },
   "keywords": [
     "Promise",
