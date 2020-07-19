@@ -42,7 +42,7 @@
     "express-generator": "^4.15.0",
     "extend-promise": "^0.0.6",
     "formidable": "^1.1.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "mssql": "^4.0.4",
     "mysql": "^2.11.1",
     "mysql-dbhelper": "^0.3.2",
