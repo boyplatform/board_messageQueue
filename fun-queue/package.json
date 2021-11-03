@@ -50,7 +50,7 @@
     "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
     "thunkify": "^2.1.2",
-    "validator": "^11.1.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "electron-rebuild": "^1.8.6",
