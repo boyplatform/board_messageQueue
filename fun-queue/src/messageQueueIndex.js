@@ -867,13 +867,25 @@ var QueueIndexDic=(function() {
 
         if(BestQueueIndexMap[queueIndexGuid]===undefined)
         {
-              BestQueueIndexMap[queueIndexGuid]=1;
+              if(ruleNum===4)
+              {
+                BestQueueIndexMap[queueIndexGuid]=-1; //abnormal state queue should lost weight score here
+              }
+              else
+              {
+                BestQueueIndexMap[queueIndexGuid]=1;
+              }
     
-    
-        }else
+        }
+        else
         {
-              BestQueueIndexMap[queueIndexGuid]++;
-    
+              if(ruleNum===4)
+              {
+                BestQueueIndexMap[queueIndexGuid]--; //abnormal state queue should lost weight score here
+              }else
+              {
+                BestQueueIndexMap[queueIndexGuid]++;
+              }
         }
    
         switch(ruleNum){
@@ -910,11 +922,11 @@ var QueueIndexDic=(function() {
               break;
    
               case 4:
-                 if(lastBestHitQIndexCube.lastStatusQIndex!=""){
+                 /* if(lastBestHitQIndexCube.lastStatusQIndex!=""){
                  BestQueueIndexMap[lastBestHitQIndexCube.lastStatusQIndex]++; //基于规则，增加前一个最差选的权重。(差的里挑最好)
                  }
-
-                 lastBestHitQIndexCube.lastStatusQIndex=queueIndexGuid; //基于规则，登记一个最差选
+                 */
+                 lastBestHitQIndexCube.lastStatusQIndex=queueIndexGuid; //基于规则，登记最后一个非正常状态queue的key
               break;
             }   
    
